@@ -8,11 +8,11 @@ public class ShopState extends ShoppingCartState{
 
     @Override
     public void pay(){
-        throw new IllegalStateException("YOU CANNOT PAY WHILE YOU'RE IN THE SHOP STATE RAFAEL!!!");
+        throw new IllegalStateException("You can't pay when you're in the shop state");
     }
 
     @Override
     public void cancel() {
-        throw new IllegalStateException("YOU CANNOT CANCEL WHILE YOU'RE IN THE SHOP STATE RAFAEL!!!");
+        throw new IllegalStateException("You can't cancel when you're in the cancel state");
     }
 }

@@ -9,11 +9,11 @@ public class FinalState extends ShoppingCartState{
 
     @Override
     public void addProduct(Product product) {
-        throw new IllegalStateException("YOU CANNOT ADD A PRODUCT WHILE YOU'RE IN THE FINAL STATE RAFAEL!!!");
+        throw new IllegalStateException("You can't add a product when you're in the final state");
     }
 
     @Override
     public void removeProduct(Product product) {
-        throw new IllegalStateException("YOU CANNOT REMOVE A PRODUCT WHILE YOU'RE IN THE FINAL STATE RAFAEL!!!");
+        throw new IllegalStateException("You can't remove a product when you're in the final state");
     }
 }

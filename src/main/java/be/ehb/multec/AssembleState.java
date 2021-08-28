@@ -9,6 +9,6 @@ public class AssembleState extends ShoppingCartState{
 
     @Override
     public void addProduct(Product product) {
-    throw new IllegalStateException("YOU CANNOT ADD A PRODUCT WHILE YOU'RE IN THE SHOP STATE RAFAEL!!!");
+    throw new IllegalStateException("You can't add a product while you're in the assemble state");
     }
 }
