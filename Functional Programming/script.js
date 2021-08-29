@@ -1,5 +1,4 @@
 function demo(){
-    console.log("We can do it!");
     let person = makePerson("Chris", "Malr");
     let product = makeProduct("Paper", 6);
     let product1 = makeProduct("Bag", 5);
