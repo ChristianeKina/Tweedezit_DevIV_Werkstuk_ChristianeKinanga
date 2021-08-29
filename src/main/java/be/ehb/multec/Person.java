@@ -35,4 +35,9 @@ public class Person implements Observer{
     public int hashCode() {
         return Objects.hash(firstName, lastName, birthdate);
     }
+
+    @Override
+    public String toString() {
+        return firstName + ' '+ lastName ;
+    }
 }

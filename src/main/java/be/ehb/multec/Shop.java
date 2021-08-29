@@ -49,6 +49,7 @@ public class Shop implements Subject, Observer{
                         similarShoppingCarts.clear();
                         similarShoppingCarts.add(shoppingCarts.get(i));
                         similarShoppingCarts.add(shoppingCarts.get(j));
+                        System.out.println(shoppingCarts.get(i).getPerson() + " and " + shoppingCarts.get(j).getPerson() + " have " + commonItems + " similar items namely" + shoppingCarts.get(j).getProducts());
                     }
                 }
             }
@@ -89,5 +90,12 @@ public class Shop implements Subject, Observer{
     public void update(Object object) {
         ShoppingCart shoppingCart = (ShoppingCart) object;
         shoppingCarts.remove(shoppingCart);
+    }
+
+    @Override
+    public String toString() {
+        return "Shop{" +
+                "shoppingCarts=" + shoppingCarts +
+                '}';
     }
 }

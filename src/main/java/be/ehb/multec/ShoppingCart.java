@@ -23,13 +23,6 @@ public class ShoppingCart implements Subject{
         setCurrentState(shopState);
     }
 
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPayment(PaymentMethod payment) {
-        this.payment = payment;
-    }
 
     public void addProductState(Product product){
         products.add(product);
@@ -58,8 +51,8 @@ public class ShoppingCart implements Subject{
     public void cancelShoppingCart(){
         this.currentState.cancel();
     }
-    public void cancelShoppingCartState(){ updateObservers(this);
-    }
+
+    public void cancelShoppingCartState(){ updateObservers(this); }
 
     @Override
     public void addObserver(Observer observer) {
@@ -94,15 +87,22 @@ public class ShoppingCart implements Subject{
         return currentState;
     }
 
-    public PaymentMethod getPayment() {
-        return payment;
-    }
+    public PaymentMethod getPayment() { return payment; }
 
     public ArrayList<Product> getProducts() {
         return products;
     }
 
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPayment(PaymentMethod payment) {
+        this.payment = payment;
+    }
+
     public void setCurrentState(ShoppingCartState currentState) {
         this.currentState = currentState;
     }
+
 }

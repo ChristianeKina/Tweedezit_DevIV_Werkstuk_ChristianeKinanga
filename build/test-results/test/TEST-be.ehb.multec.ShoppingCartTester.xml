@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="be.ehb.multec.ShoppingCartTester" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-08-28T15:52:28" hostname="LAPTOP-M9VR0HOC" time="0.054">
+<testsuite name="be.ehb.multec.ShoppingCartTester" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-08-29T14:49:44" hostname="LAPTOP-M9VR0HOC" time="0.049">
   <properties/>
-  <testcase name="strategyTest()" classname="be.ehb.multec.ShoppingCartTester" time="0.039"/>
-  <testcase name="shoppingCartStateTest()" classname="be.ehb.multec.ShoppingCartTester" time="0.003"/>
-  <testcase name="observerTest()" classname="be.ehb.multec.ShoppingCartTester" time="0.002"/>
-  <testcase name="Test()" classname="be.ehb.multec.ShoppingCartTester" time="0.003"/>
-  <testcase name="shoppingCartWrongStateTest()" classname="be.ehb.multec.ShoppingCartTester" time="0.002"/>
-  <system-out><![CDATA[Shopping cart paid with card
+  <testcase name="strategyTest()" classname="be.ehb.multec.ShoppingCartTester" time="0.023"/>
+  <testcase name="shoppingCartStateTest()" classname="be.ehb.multec.ShoppingCartTester" time="0.005"/>
+  <testcase name="observerTest()" classname="be.ehb.multec.ShoppingCartTester" time="0.001"/>
+  <testcase name="findSimilarItemsTest()" classname="be.ehb.multec.ShoppingCartTester" time="0.015"/>
+  <testcase name="shoppingCartWrongStateTest()" classname="be.ehb.multec.ShoppingCartTester" time="0.001"/>
+  <system-out><![CDATA[Shopping cart paid by card
 Shopping cart paid with cash
-fytuuyu
+Chris Malr and Lele Pmos have 2 similar items namely[paper at 6.0, bag at 7.0]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

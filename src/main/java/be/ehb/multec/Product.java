@@ -40,4 +40,9 @@ public class Product {
     public int hashCode() {
         return Objects.hash(getName(), getPrice());
     }
+
+    @Override
+    public String toString() {
+        return name + " at " + price;
+    }
 }
